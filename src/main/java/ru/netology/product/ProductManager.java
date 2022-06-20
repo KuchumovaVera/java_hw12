@@ -40,7 +40,7 @@ public class ProductManager {
         return repository.findAll();
     }
 
-    public void removeById(int removeId) {
-        repository.removeById(removeId);
+    public void removeById(int id) {
+        repository.removeById(id);
     }
 }

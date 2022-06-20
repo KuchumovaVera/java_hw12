@@ -3,7 +3,7 @@ package ru.netology.product;
 public class ProductRepository {
     private Product[] products = new Product[0];
 
-        public void save(Product newProduct) {
+    public void save(Product newProduct) {
         int length = products.length + 1;
         Product[] tmp = new Product[length];
 
@@ -26,9 +26,9 @@ public class ProductRepository {
         int length = products.length - 1;
         Product[] tmp = new Product[length];
         int index = 0;
-        for (Product product:products) {
-            if (product.getId() !=id){
-                tmp[index]=product;
+        for (Product product : products) {
+            if (product.getId() != id) {
+                tmp[index] = product;
                 index++;
             }
         }
